@@ -1,0 +1,234 @@
+StatsSmallShield
+{	
+	// Ressources
+			Ressource1 = [steel, 40]
+			Ressource2 = [coil, 40]
+	
+	// Components
+			MaxHealth = 6000
+			CommandPoints = 3
+			
+	// ArcShield
+			Radius_90FrontArc = 7.5
+			Radius_200FrontArc = 7.5
+			Radius_90FrontLine = 85
+			Radius_22LeftLine = 85
+			Radius_22RightLine = 85
+			
+			Arc_90FrontArc = 90d
+			Arc_200FrontArc = 200d
+			Arc_90FrontLine = 10d
+			Arc_22LeftLine = 9d
+			Arc_22RightLine = 9d
+			
+			Rotation_90FrontArc = -90d
+			Rotation_200FrontArc = -90d
+			Rotation_90FrontLine = -90d
+			Rotation_22LeftLine = -110d
+			Rotation_22RightLine = -70d
+			
+			Location_90FrontArc = [1, 1.5]
+			Location_200FrontArc = [1, 1.5]
+			Location_90FrontLine = [1, 79]
+			Location_22LeftLine = [27, 74]
+			Location_22RightLine = [-25, 74]
+			
+			HitMediaEffectsArc_90FrontArc = 20d
+			HitMediaEffectsArc_200FrontArc = 20d
+			HitMediaEffectsArc_90FrontLine = 2d
+			HitMediaEffectsArc_22LeftLine = 2d
+			HitMediaEffectsArc_22RightLine = 2d
+}
+
+
+StatsLargeShield
+{	
+	// Ressources
+			Ressource1 = [steel, 40]
+			Ressource2 = [coil, 40]
+	
+	// Components
+			MaxHealth = 6000
+			CommandPoints = 3	
+}
+
+StatsSTSShield
+{	
+	// Ressources
+			Ressource1 = [steel, 55]
+			Ressource2 = [coil, 40]
+			Ressource3 = [coil2, 20]
+	
+	// Components
+			MaxHealth = 5000
+			CommandPoints = 4
+				
+	// PowerDrain
+			PowerDrain_XS = 250
+			PowerDrain_S = 350
+			PowerDrain_M = 500
+			
+	// ArcShield
+			Radius_XS = 7.5
+			Radius_S = 16
+			Radius_M = 35
+			
+			Arc_XS = 360d
+			Arc_S = 360d
+			Arc_M = 360d
+			
+			HitMediaEffectsArc_XS = 20d
+			HitMediaEffectsArc_S = 16d
+			HitMediaEffectsArc_M = 12d
+}
+
+StatsCommon
+{	
+	// Shield_Doodad_Graphics (Rotation de l'axe)
+			DoodadAxe_RotSpeed_0DMG = 360d
+			DoodadAxe_RotSpeed_33DMG = 200d
+			DoodadAxe_RotSpeed_66DMG = 100d
+			
+			DoodadAxe2_RotSpeed_0DMG = -300d
+			DoodadAxe2_RotSpeed_33DMG = -120d
+			DoodadAxe2_RotSpeed_66DMG = -60d
+	
+	// ArcShield
+			HitMediaEffects_waveAlpha = 12     // 0.75 par defaut
+
+	///////////////////////////////////////////////////////////////////////////////
+	/// PURPLE ////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////////////
+	
+	// ShieldMediaEffects - PURPLE ----------------------------------------------
+			SME_PurpleOn_fullPowerColor1 = [70, 40, 100, 127]
+			SME_PurpleOn_lowPowerColor1 = [70, 40, 100, 127]
+			SME_PurpleOn_fullPowerColor2 = [160, 50, 255, 127] // Couleur prioritaire
+			SME_PurpleOn_lowPowerColor2 = [255, 100, 100, 127] // Couleur prioritaire
+			
+			SME_PurpleOff_fullPowerColor1 = [70, 40, 100, 0]
+			SME_PurpleOff_lowPowerColor1 = [70, 40, 100, 0]
+			SME_PurpleOff_fullPowerColor2 = [160, 50, 255, 0] // Couleur prioritaire
+			SME_PurpleOff_lowPowerColor2 = [255, 100, 100, 0] // Couleur prioritaire
+	
+	// HitMediaEffects - PURPLE -------------------------------------------------
+			HME_Purple_fullPowerColor1 = [130, 80, 180, 127]
+			HME_Purple_lowPowerColor1 = [255, 0, 0, 127]
+			HME_Purple_fullPowerColor2 = [190, 150, 255, 127]
+			HME_Purple_lowPowerColor2 = [236, 150, 234, 127]
+
+	///////////////////////////////////////////////////////////////////////////////
+	/// BLUE //////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////////////
+	
+	// ShieldMediaEffects - BLUE -------------------------------------------
+			SME_BlueOn_fullPowerColor1 = [0, 35, 90, 127]
+			SME_BlueOn_lowPowerColor1 = [0, 35, 90, 127]
+			SME_BlueOn_fullPowerColor2 = [40, 150, 250, 127]
+			SME_BlueOn_lowPowerColor2 = [255, 100, 100, 127]
+			
+			SME_BlueOff_fullPowerColor1 = [0, 35, 90, 0]
+			SME_BlueOff_lowPowerColor1 = [0, 35, 90, 0]
+			SME_BlueOff_fullPowerColor2 = [40, 150, 250, 0] // Couleur prioritaire
+			SME_BlueOff_lowPowerColor2 = [255, 100, 100, 0] // Couleur prioritaire
+	
+	// HitMediaEffects - BLUE -------------------------------------------
+			HME_Blue_fullPowerColor1 = [0, 0, 255, 127]
+			HME_Blue_lowPowerColor1 = [255, 0, 0, 127]
+			HME_Blue_fullPowerColor2 = [100, 165, 238, 127]
+			HME_Blue_lowPowerColor2 = [210, 150, 236, 127]
+			
+	///////////////////////////////////////////////////////////////////////////////
+	/// ORANGE ////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////////////
+	
+	// ShieldMediaEffects - ORANGE -------------------------------------------
+			SME_OrangeOn_fullPowerColor1 = [110, 90, 15, 127]
+			SME_OrangeOn_lowPowerColor1 = [110, 90, 15, 127]
+			SME_OrangeOn_fullPowerColor2 = [250, 185, 40, 127]
+			SME_OrangeOn_lowPowerColor2 = [255, 100, 100, 127]
+			
+			SME_OrangeOff_fullPowerColor1 = [110, 90, 15, 0]
+			SME_OrangeOff_lowPowerColor1 = [110, 90, 15, 0]
+			SME_OrangeOff_fullPowerColor2 = [250, 185, 40, 0] // Couleur prioritaire
+			SME_OrangeOff_lowPowerColor2 = [255, 100, 100, 0] // Couleur prioritaire
+	
+	// HitMediaEffects - ORANGE -------------------------------------------
+			HME_Orange_fullPowerColor1 = [255, 150, 0, 127]
+			HME_Orange_lowPowerColor1 = [255, 0, 0, 200]
+			HME_Orange_fullPowerColor2 = [240, 190, 100, 127]
+			HME_Orange_lowPowerColor2 = [210, 150, 236, 127]
+			
+	///////////////////////////////////////////////////////////////////////////////
+	/// RED ////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////////////
+	
+	// ShieldMediaEffects - RED -------------------------------------------
+			SME_RedOn_fullPowerColor1 = [110, 15, 15, 127]
+			SME_RedOn_lowPowerColor1 = [110, 15, 15, 127]
+			SME_RedOn_fullPowerColor2 = [250, 100, 100, 127]
+			SME_RedOn_lowPowerColor2 = [255, 100, 100, 127]
+			
+			SME_RedOff_fullPowerColor1 = [110, 15, 15, 0]
+			SME_RedOff_lowPowerColor1 = [110, 15, 15, 0]
+			SME_RedOff_fullPowerColor2 = [250, 100, 100, 0] // Couleur prioritaire
+			SME_RedOff_lowPowerColor2 = [255, 100, 100, 0] // Couleur prioritaire
+	
+	// HitMediaEffects - RED -------------------------------------------
+			HME_Red_fullPowerColor1 = [255, 0, 0, 127]
+			HME_Red_lowPowerColor1 = [255, 0, 0, 200]
+			HME_Red_fullPowerColor2 = [240, 100, 100, 127]
+			HME_Red_lowPowerColor2 = [236, 150, 150, 180]
+			
+	///////////////////////////////////////////////////////////////////////////////
+	/// YELLOW ////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////////////
+	
+	// ShieldMediaEffects - YELLOW -------------------------------------------
+			SME_YellowOn_fullPowerColor1 = [125, 120, 25, 127]
+			SME_YellowOn_lowPowerColor1 = [125, 120, 25, 127]
+			SME_YellowOn_fullPowerColor2 = [250, 245, 100, 127]
+			SME_YellowOn_lowPowerColor2 = [255, 100, 100, 127]
+			
+			SME_YellowOff_fullPowerColor1 = [125, 120, 25, 0]
+			SME_YellowOff_lowPowerColor1 = [125, 120, 25, 0]
+			SME_YellowOff_fullPowerColor2 = [250, 245, 100, 0] // Couleur prioritaire
+			SME_YellowOff_lowPowerColor2 = [255, 100, 100, 0] // Couleur prioritaire
+	
+	// HitMediaEffects - YELLOW -------------------------------------------
+			HME_Yellow_fullPowerColor1 = [255, 255, 0, 127]
+			HME_Yellow_lowPowerColor1 = [255, 255, 0, 200]
+			HME_Yellow_fullPowerColor2 = [235, 240, 100, 127]
+			HME_Yellow_lowPowerColor2 = [236, 233, 150, 120]
+	
+	///////////////////////////////////////////////////////////////////////////////
+	/// GREEN /////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////////////
+	
+	// ShieldMediaEffects - GREEN -------------------------------------------
+			SME_GreenOn_fullPowerColor1 = [30, 125, 25, 127]
+			SME_GreenOn_lowPowerColor1 = [30, 125, 25, 127]
+			SME_GreenOn_fullPowerColor2 = [135, 250, 100, 127]
+			SME_GreenOn_lowPowerColor2 = [255, 0, 0, 127]
+			
+			SME_GreenOff_fullPowerColor1 = [30, 125, 25, 0]
+			SME_GreenOff_lowPowerColor1 = [30, 125, 25, 0]
+			SME_GreenOff_fullPowerColor2 = [135, 250, 100, 0] // Couleur prioritaire
+			SME_GreenOff_lowPowerColor2 = [255, 100, 100, 0] // Couleur prioritaire
+	
+	// HitMediaEffects - GREEN -------------------------------------------
+			HME_Green_fullPowerColor1 = [0, 255, 0, 127]
+			HME_Green_lowPowerColor1 = [0, 255, 0, 127]
+			HME_Green_fullPowerColor2 = [100, 240, 100, 127]
+			HME_Green_lowPowerColor2 = [150, 233, 150, 180]
+			
+	///////////////////////////////////////////////////////////////////////////////
+	/// NULL/ /////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////////////		
+			
+	// EmitterMediaEffect
+			EME_Null_fullPowerColor1 = [0, 0, 0, 0]
+			EME_Null_lowPowerColor1 = [0, 0, 0, 0]
+			EME_Null_fullPowerColor2 = [0, 0, 0, 0]
+			EME_Null_lowPowerColor2 = [0, 0, 0, 0]
+}

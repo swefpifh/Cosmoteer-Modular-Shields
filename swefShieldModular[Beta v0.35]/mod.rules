@@ -1,0 +1,76 @@
+ID = swefpifh.SpecialShield
+
+Name = "[Beta] Modular+++ Shields v0.35"
+
+Version = 0.35
+
+CompatibleGameVersions = ["0.20.34", "0.20.35"]
+
+ModifiesMultiplayer = true
+
+Author = "swefpifh, RustyDios"
+
+Logo = "logo.png"
+
+Description = 	"Shields more realistic for your ship.\n\n"\
+				"<color r='250' g='100' b='100' a='255'>[Warning]</color> <color r='200' g='100' b='100' a='255'>This mod is in Beta phase, it is functional but still subject to bugs.</color>"
+
+StringsFolder = "strings"
+
+Actions
+[
+	{
+		Action = AddMany
+		AddTo = "<ships/terran/terran.rules>/Terran/Parts"
+
+		CreateIfNotExisting = false
+		IgnoreIfNotExisting = false
+
+		ManyToAdd
+		[
+			
+			&<shield_gen_small_modular/shield_gen_small_modular.rules>/Part
+			
+			&<shield_gen_sts_modular/shield_gen_sts_modular.rules>/Part
+		]
+	}
+	
+	
+	
+	{
+		Action = AddMany
+		AddTo = "<gui/game/parts/part_toggles.rules>/PartToggles"
+		ManyToAdd
+		[			
+			&<gui/part_toggles_display.rules>/Kebechet_Modular_Display
+			&<gui/part_toggles_colours.rules>/Kebechet_Modular_Colours
+			&<gui/part_toggles_angles.rules>/Kebechet_GEN_Modular_Angle
+			&<gui/part_toggles_angles.rules>/Kebechet_STS_Modular_Angle
+			&<gui/part_toggles_angles.rules>/Kebechet_STL_Modular_Angle
+		]
+	}
+	
+	{
+		Action = AddMany
+		AddTo = "<modes/career/techs.rules>/Techs"
+		ManyToAdd = &<techs.rules>/Techs
+	}
+	
+	{
+		Action = Overrides
+		OverrideIn = "<modes/career/techs.rules>/Techs/11"
+		Overrides
+		{
+			Icon = &<shield_gen_small_modular/shield_gen_small_modular.rules>/Part/EditorIcon
+		}
+	}
+	
+	{
+		Action = AddMany
+		AddTo = "<modes/career/techs.rules>/Techs/11/PartsUnlocked"
+		ManyToAdd
+		[
+			&<shield_gen_small_modular/shield_gen_small_modular.rules>/Part/ID
+		]
+	}
+]

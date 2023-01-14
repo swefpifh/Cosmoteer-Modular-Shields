@@ -1,0 +1,19 @@
+Techs
+[
+	// --------------------------------------------------------------------------------------------
+	// SHT Kebechet-STS ---------------------------------------------------------------------------
+	{	
+		ID = swefpifh.Kebechet_STS_modularShield
+		NameKey = &<shield_gen_sts_modular/shield_gen_sts_modular.rules>/Part/NameKey
+		DescriptionKey = &<shield_gen_sts_modular/shield_gen_sts_modular.rules>/Part/DescriptionKey
+		Icon = &<shield_gen_sts_modular/shield_gen_sts_modular.rules>/Part/EditorIcon
+		EditorGroup = &<shield_gen_sts_modular/shield_gen_sts_modular.rules>/Part/EditorGroup
+		PartsUnlocked = [
+						&<shield_gen_sts_modular/shield_gen_sts_modular.rules>/Part/ID
+						]
+		Cost = 10000
+		Prerequisites = [cosmoteer.shield_gen_small, cosmoteer.reactor_med]
+	}
+	
+	// --------------------------------------------------------------------------------------------
+]
